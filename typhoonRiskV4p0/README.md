@@ -1,7 +1,11 @@
 This project is about typhoon risk assessment.
+
 (1).process typhoon data
+
 (2).GeogrgiouWindFieldModel
+
 (3).calculate and plot
+
 
 1.模型使用步骤：
 （1）step01_extractSiteData.py提取加密控制点的台风记录（控制点数据从parameter.py读取）
