@@ -26,7 +26,7 @@ specialWindFarmInfo = parameter.specialWindFarmInfo()
 oneSiteInfo = parameter.oneSiteInfo()
 
 # 1 for WeatherStation, 2 for WindFarmInfo, 3 for ZhanJiang
-work  = 1 
+work  = 3
 if work == 1:
     totalDict = allWeatherStationInfo
     factor = [1.0,1.0,1.0,0.95,0.85,0.9,1.1,0.8,0.9,0.75,0.9]
@@ -64,8 +64,8 @@ for iKey in totalDict.keys():
         else:
             inputFileObs = r"../obs_data/"+iKey+"_obs_vmax_correct.csv" #obs
    
-    outputFileName     = r"./data_vmax/"+iKey+"VmaxFinal.csv" 
-    outputFileName100m = r"./data_vmax/"+iKey+"VmaxFinal100m.csv" 
+    outputFileName     = r"./data_Vmax/"+iKey+"VmaxFinal.csv" 
+    outputFileName100m = r"./data_Vmax/"+iKey+"VmaxFinal100m.csv" 
     #print("reading simulation data from",inputFileSim)
     #print("reading observation data from",inputFileObs)
     

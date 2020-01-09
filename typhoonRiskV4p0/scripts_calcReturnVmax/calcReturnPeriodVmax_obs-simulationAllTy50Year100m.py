@@ -25,7 +25,7 @@ allWindFarmInfo = parameter.allWindFarmInfo()
 specialWindFarmInfo = parameter.specialWindFarmInfo()
 oneSiteInfo = parameter.oneSiteInfo()
 
-work = 1 # 1 or 2 or 3
+work = 2 # 1 or 2 or 3
 if work == 1:
     totalDict = allWeatherStationInfo
     outVmax50a = "VmaxReturnPeriodAllWeatherStation50a100m.csv"

@@ -38,7 +38,7 @@ class function:
         cosC = cos(90-lat2)*cos(90-lat1) +  \
                sin(90-lat2)*sin(90-lat1)*cos(lon2-lon1)
         sinC = sqrt(1-cosC*cosC)
-        if sinC == 0:
+        if abs(sinC) < 1e-10:
             print(lon1, lat1, lon2, lat2)
             sinC = 0.0001
         arg1 = (sin(90-lat2)*sin(lon2-lon1))/sinC
